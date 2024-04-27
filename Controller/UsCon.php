@@ -16,7 +16,7 @@ if(isset($_POST['btnSnd'])){
 
         //Contructor of the class UsCon
         function __construct(){
-            require ('Model/UsMod.php');
+            require ( dirname(__DIR__) .'\Model\UsMod.php');
             echo "Contructor of the class UsCon done <br>";
         }
 
@@ -30,9 +30,22 @@ if(isset($_POST['btnSnd'])){
         }
 
         function regUsForm( $dnte, $dndo, $ofen, $desc, $fden, $fsuc){
-            
+
             $UsModReg = new UsMod();
-            $UsModReg->sUs($dnte, $dndo, $ofen, $desc, $fden, $fsuc);
+            $res = $UsModReg->sUs($dnte, $dndo, $ofen, $desc, $fden, $fsuc);
+
+            if ($res) {
+                echo "
+                <script>
+                alert('Expediente resgistered successfully')
+                </script>";
+
+            } else {
+                echo "
+                <script>
+                alert('Error registering expediente')
+                </script>";
+            }
 
         }
 

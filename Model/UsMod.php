@@ -1,5 +1,5 @@
 <?php
-include '../Conf/Conn.php';
+include dirname(__DIR__) . '\Conf\Conn.php';
     class UsMod extends Con{
 
         private $con;
