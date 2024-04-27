@@ -4,7 +4,7 @@ if(isset($_POST['btnSnd'])){
     $dnte = $_REQUEST['dnte'];
     $dndo = $_REQUEST['dndo'];
     $ofen = $_REQUEST['ofen'];
-    $desc = $_REQUEST['desc'];
+    $desc = $_REQUEST['desch'];
     $fden = $_REQUEST['fden'];
     $fsuc = $_REQUEST['fsuc'];
     

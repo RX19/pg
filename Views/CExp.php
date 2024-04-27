@@ -31,13 +31,13 @@
 
                 <p>
                     <label for="ofen">Ofendido</label> <br>
-                    <input type="text" id="ofen" name="ofen" placeholder="Ofendido" required="true">
+                    <input type="text" id="ofen" name="ofen" placeholder="Ofendido" >
                 </div>
 
             <div class="row justify-md-center">
                 <p>
-                    <label for="desc">Descripción de los hechos</label> <br>
-                    <input type="text" id="desc" name="desc" placeholder="Descripción" required="true">
+                    <label for="desch">Descripción de los hechos</label> <br>
+                    <input type="text" id="desch" name="desch" placeholder="Descripción" required="true">
                 </p>
 
                 <p>

@@ -28,10 +28,10 @@ include dirname(__DIR__) . '\Conf\Conn.php';
             return $idexp;
         }
 
-        function sUs($dnte, $dndo, $ofen, $desc, $fden, $fsuc){
+        function sUs($dnte, $dndo, $ofen, $desch, $fden, $fsuc){
 
-            $sql = "INSERT INTO expediente (idexp, dnte, dndo, ofen, desc, fden, fsuc) 
-            VALUES (DEFAULT, '$dnte', '$dndo', '$ofen', '$desc', '$fden', '$fsuc')";
+            $sql = "INSERT INTO expediente (idexp, dnte, dndo, ofen, desch, fden, fsuc) 
+            VALUES (DEFAULT, '$dnte', '$dndo', '$ofen', '$desch', '$fden', '$fsuc')";
             $query = pg_query($sql);
             return $query;
         }
