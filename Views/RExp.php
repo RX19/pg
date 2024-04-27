@@ -28,7 +28,7 @@
 
                 <?php foreach ($data as $us) : ?>
                     <tr>
-                        <td scope = "col"><?= $us->idExp ?></td>
+                        <td scope = "col"><?= $us->idexp ?></td>
                         <td scope = "col"><?= $us->dnte ?></td>
                         <td scope = "col"><?= $us->dndo ?></td>
                         <td scope = "col"><?= $us->ofen ?></td>

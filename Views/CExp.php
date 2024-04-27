@@ -17,15 +17,6 @@
     <div class="row justify-content-center align-items-center">
         <form class="text-center" action="../Controller/UsCon.php" method="post">
 
-            <div class="row justify-content-center">
-                <p>
-                    <label for="idexp">ID Expediente</label> <br>
-                    <input type="text" id="idexp" name="idexp" placeholder="ID" required="true">
-                </p>
-                
-            </div>
-
-            
             <div class="row justify-md-center">
 
                 <p>

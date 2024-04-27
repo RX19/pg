@@ -1,4 +1,16 @@
 <?php
+
+if(isset($_POST['btnSnd'])){
+    $dnte = $_REQUEST['dnte'];
+    $dndo = $_REQUEST['dndo'];
+    $ofen = $_REQUEST['ofen'];
+    $desc = $_REQUEST['desc'];
+    $fden = $_REQUEST['fden'];
+    $fsuc = $_REQUEST['fsuc'];
+    
+    $UsCon = new UsCon();
+    $UsCon->regUsForm($dnte, $dndo, $ofen, $desc, $fden, $fsuc);
+}
     class UsCon{
 
 
@@ -14,6 +26,14 @@
             $data = $UsMod->getID();
 
             include ('Views/RExp.php');
+
+        }
+
+        function regUsForm( $dnte, $dndo, $ofen, $desc, $fden, $fsuc){
+
+            require ('Model/UsMod.php');
+            $UsModReg = new UsMod();
+            $UsModReg->sUs($dnte, $dndo, $ofen, $desc, $fden, $fsuc);
 
         }
 

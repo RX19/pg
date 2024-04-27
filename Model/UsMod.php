@@ -21,11 +21,17 @@ include 'Conf/Conn.php';
             }
 
             while ($row = pg_fetch_object($query_expediente)) {
-                echo "ID: " . $row->idExp . "<br>";
-                $idExp[] = $row;
+                echo "ID: " . $row->idexp . "<br>";
+                $idexp[] = $row;
             }
 
-            return $idExp;
+            return $idexp;
+        }
+
+        function sUs($dnte, $dndo, $ofen, $desc, $fden, $fsuc){
+            $sql = "INSERT INTO expediente (idexp, dnte, dndo, ofen, desc, fden, fsuc) 
+            VALUES (DEFAULT, '$dnte', '$dndo', '$ofen', '$desc', '$fden', '$fsuc')";
+            $query = pg_query($sql);
         }
 }
     
