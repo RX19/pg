@@ -30,8 +30,7 @@ if(isset($_POST['btnSnd'])){
         }
 
         function regUsForm( $dnte, $dndo, $ofen, $desc, $fden, $fsuc){
-
-            require ('Model/UsMod.php');
+            
             $UsModReg = new UsMod();
             $UsModReg->sUs($dnte, $dndo, $ofen, $desc, $fden, $fsuc);
 

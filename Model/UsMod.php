@@ -1,5 +1,5 @@
 <?php
-include 'Conf/Conn.php';
+include '../Conf/Conn.php';
     class UsMod extends Con{
 
         private $con;
@@ -29,9 +29,11 @@ include 'Conf/Conn.php';
         }
 
         function sUs($dnte, $dndo, $ofen, $desc, $fden, $fsuc){
+
             $sql = "INSERT INTO expediente (idexp, dnte, dndo, ofen, desc, fden, fsuc) 
             VALUES (DEFAULT, '$dnte', '$dndo', '$ofen', '$desc', '$fden', '$fsuc')";
             $query = pg_query($sql);
+            return $query;
         }
 }
     
