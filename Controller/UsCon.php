@@ -13,7 +13,7 @@
             $UsMod = new UsMod();
             $data = $UsMod->getID();
 
-            include ('Views/QExp.php');
+            include ('Views/RExp.php');
 
         }
 

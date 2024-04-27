@@ -11,8 +11,8 @@
     <h2>This view show all users</h2>
 
     <div>
-        <table class="table">
-            <thead>
+        <table class="table table-hover">
+            <thead class ="thead-dark">
                 <tr>
                     <th>ID Expediente</th>
                     <th>Denunciante</th>
@@ -28,13 +28,13 @@
 
                 <?php foreach ($data as $us) : ?>
                     <tr>
-                        <td><?= $us->idExp ?></td>
-                        <td><?= $us->dnte ?></td>
-                        <td><?= $us->dndo ?></td>
-                        <td><?= $us->ofen ?></td>
-                        <td><?= $us->desc ?></td>
-                        <td><?= $us->fden ?></td>
-                        <td><?= $us->fsuc ?></td>
+                        <td scope = "col"><?= $us->idExp ?></td>
+                        <td scope = "col"><?= $us->dnte ?></td>
+                        <td scope = "col"><?= $us->dndo ?></td>
+                        <td scope = "col"><?= $us->ofen ?></td>
+                        <td scope = "col"><?= $us->desc ?></td>
+                        <td scope = "col"><?= $us->fden ?></td>
+                        <td scope = "col"><?= $us->fsuc ?></td>
                     </tr>
                 <?php endforeach; ?>
 
